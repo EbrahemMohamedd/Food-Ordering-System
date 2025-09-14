@@ -1,0 +1,3 @@
+name: Space Burger, price: 110.0, description: 100g smash burger and mushroom and barbecue sauce, Image: /com/example/gui/assets/WAHMY/space.png
+name: Special Wahmy, price: 200.0, description: Double beef burgers and french fries and cola, Image: /com/example/gui/assets/WAHMY/special.png
+name:  orignial Burger, price: 90.0, description: 100g beef burger and cheddar cheese, Image: /com/example/gui/assets/WAHMY/OriginalBurger.png

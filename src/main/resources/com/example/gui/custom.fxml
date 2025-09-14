@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="700.0" styleClass="gradient" stylesheets="@css.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.stage2.customController">
+   <children>
+      <Text layoutX="190.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" textAlignment="CENTER" wrappingWidth="319.6859436035156">
+         <font>
+            <Font name="Basketball" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameitem" layoutX="206.0" layoutY="126.0" prefHeight="26.0" prefWidth="286.0" promptText="Name" />
+      <Text layoutX="16.0" layoutY="588.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price " textAlignment="CENTER" wrappingWidth="666.9181518554688">
+         <font>
+            <Font name="Basketball" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="price" layoutX="273.0" layoutY="606.0" promptText="\$0.0" />
+      <Text layoutX="15.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" textAlignment="CENTER" wrappingWidth="666.9181518554689">
+         <font>
+            <Font name="Basketball" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="26.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" textAlignment="CENTER" wrappingWidth="643.7181396484375">
+         <font>
+            <Font name="Basketball" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="des" layoutX="228.0" layoutY="235.0" prefHeight="26.0" prefWidth="252.0" promptText="The Components" />
+      <Button fx:id="cancel" layoutX="146.0" layoutY="729.0" mnemonicParsing="false" onMouseClicked="#cancel" prefHeight="50.0" prefWidth="110.0" stylesheets="@css.css" text="Cancel">
+         <font>
+            <Font name="Basketball" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="bord" />
+            <String fx:value="round-layout" />
+         </styleClass>
+      </Button>
+      <Button fx:id="confirm" layoutX="466.0" layoutY="729.0" mnemonicParsing="false" onMouseClicked="#confirm" prefHeight="50.0" prefWidth="110.0" stylesheets="@css.css" text="Confirm">
+         <font>
+            <Font name="Basketball" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="bord" />
+            <String fx:value="rnd" />
+         </styleClass>
+      </Button>
+      <MenuButton fx:id="menuButton" alignment="CENTER" layoutX="236.0" layoutY="345.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="219.0" stylesheets="@css.css" text="Choose" textFill="#d11616">
+        <items>
+
+
+        </items>
+         <styleClass>
+            <String fx:value="bord" />
+            <String fx:value="round-layout" />
+         </styleClass>
+      </MenuButton>
+      <Text fx:id="fail" fill="#d10606" layoutX="267.0" layoutY="725.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="188.0">
+         <font>
+            <Font name="Basketball" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="16.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image" textAlignment="CENTER" wrappingWidth="666.9181518554688">
+         <font>
+            <Font name="Basketball" size="25.0" />
+         </font>
+      </Text>
+      <Button layoutX="228.0" layoutY="482.0" mnemonicParsing="false" onAction="#imageImport" prefHeight="26.0" prefWidth="239.0" stylesheets="@css.css" text="Import Image">
+         <styleClass>
+            <String fx:value="rnd" />
+            <String fx:value="bord" />
+            <String fx:value="round-layout" />
+         </styleClass>
+      </Button>
+      <Text fx:id="path" layoutX="223.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="251.9999999999999">
+         <font>
+            <Font name="Basketball" size="10.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="view" fitHeight="120.0" fitWidth="140.0" layoutX="482.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

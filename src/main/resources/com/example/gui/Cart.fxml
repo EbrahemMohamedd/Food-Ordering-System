@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="700.0" styleClass="gradient" stylesheets="@css.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.stage2.CartController">
+   <children>
+      <Label alignment="CENTER" prefHeight="60.0" prefWidth="150.0" text="Cart" textAlignment="CENTER">
+         <font>
+            <Font size="65.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scroll" prefHeight="338.0" prefWidth="700.0" styleClass="trans" stylesheets="@css.css">
+         <content>
+            <VBox fx:id="BasicBox" alignment="TOP_CENTER" prefHeight="566.0" prefWidth="702.0" styleClass="grad2" />
+         </content>
+      </ScrollPane>
+      <VBox fx:id="paymentDetails" prefHeight="226.0" prefWidth="700.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="700.0">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="251.0" text="Cart Price: " textFill="WHITE">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="CartPrice" textFill="WHITE">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="700.0" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="62.0" prefWidth="700.0">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="251.0" text="Delivery Fees: " textFill="WHITE">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="DeliveryPrice" text="15$" textFill="WHITE">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" style="-fx-blend-mode: multiply;" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="115.0" prefHeight="62.0" prefWidth="700.0">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="251.0" text="Total Price: " textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TotalPrice" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0" style="-fx-blend-mode: multiply;" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="visa" mnemonicParsing="false" text="visa" textFill="WHITE">
+                     <font>
+                        <Font name="Basketball" size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" style="-fx-blend-mode: multiply;">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </Separator>
+                  <RadioButton fx:id="cash" mnemonicParsing="false" text="cash" textFill="WHITE">
+                     <font>
+                        <Font name="Basketball" size="18.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefWidth="200.0" style="-fx-blend-mode: multiply;" />
+            <Pane prefHeight="230.0" prefWidth="700.0">
+               <children>
+                  <TextField fx:id="visa1" layoutX="14.0" layoutY="12.0" promptText="Card Number" />
+                  <TextField fx:id="visa2" layoutX="260.0" layoutY="12.0" promptText="Date in MM/YY" />
+                  <TextField fx:id="visa3" layoutX="506.0" layoutY="12.0" promptText="CVC" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane prefHeight="107.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="warning" alignment="CENTER" layoutY="30.0" prefHeight="48.0" prefWidth="700.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" prefHeight="199.0" prefWidth="700.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#CancelOrder" prefHeight="62.0" prefWidth="145.0" stylesheets="@css.css" text="Cancel Order">
+               <HBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </HBox.margin>
+               <styleClass>
+                  <String fx:value="round-layout" />
+                  <String fx:value="bord" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Confirm" prefHeight="62.0" prefWidth="145.0" text="CheckOut">
+               <HBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </HBox.margin>
+               <styleClass>
+                  <String fx:value="bord" />
+                  <String fx:value="round-layout" />
+               </styleClass>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="210.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.stage2.ItemController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="210.0" style="-fx-background-color: #cdcdcd;" styleClass="rnd" stylesheets="@css.css">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="100.0" layoutX="10.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="assets/burger.png" />
+               </image>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </ImageView>
+            <Label fx:id="Name" alignment="CENTER" layoutX="4.0" layoutY="6.0" prefHeight="21.0" prefWidth="196.0" text="Cheese Burger">
+               <font>
+                  <Font name="Basketball" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="Description" layoutX="116.0" layoutY="33.0" prefHeight="68.0" prefWidth="92.0" text="Burger Sandwich &#10;With American Cheese &#10;And Fresh Veggies">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="Price" layoutX="134.0" layoutY="108.0" prefHeight="57.0" prefWidth="71.0" text="20$" textFill="#51b165">
+               <font>
+                  <Font name="Basketball" size="46.0" />
+               </font>
+            </Label>
+            <Label layoutX="151.0" layoutY="94.0" prefHeight="17.0" prefWidth="45.0" text="price">
+               <font>
+                  <Font name="Basketball" size="15.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="Quantity" layoutX="5.0" layoutY="107.0" prefHeight="21.0" prefWidth="59.0" />
+            <SplitMenuButton fx:id="cust" alignment="CENTER" layoutX="4.0" layoutY="138.0" mnemonicParsing="false" onAction="#Customize" prefHeight="23.0" prefWidth="113.0" text="Customization">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" text="Action 2" />
+               </items>
+               <font>
+                  <Font name="Basketball" size="12.0" />
+               </font>
+            </SplitMenuButton>
+         </children>
+      </Pane>
+   </children>
+</Pane>

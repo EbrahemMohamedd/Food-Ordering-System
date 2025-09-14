@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="900.0" styleClass="gradient" stylesheets="@css.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.stage3.AnalysisController">
+   <children>
+      <ScrollPane layoutX="-1.0" layoutY="113.0" prefHeight="487.0" prefWidth="310.0" stylesheets="@css.css">
+         <content>
+            <VBox fx:id="app" prefHeight="134.0" prefWidth="307.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="310.0" layoutY="113.0" prefHeight="487.0" prefWidth="300.0" stylesheets="@css.css">
+         <content>
+            <VBox fx:id="main" prefHeight="118.0" prefWidth="298.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="611.0" layoutY="113.0" prefHeight="487.0" prefWidth="310.0" stylesheets="@css.css">
+         <content>
+            <VBox fx:id="drink" prefHeight="118.0" prefWidth="307.0" />
+         </content>
+      </ScrollPane>
+      <Pane layoutX="331.0" layoutY="601.0" prefHeight="71.0" prefWidth="264.0">
+         <children>
+            <Text layoutX="12.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="total price =">
+               <font>
+                  <Font name="Basketball" size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="mainprice" layoutX="164.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5161555">
+               <font>
+                  <Font name="Basketball" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="644.0" layoutY="601.0" prefHeight="71.0" prefWidth="264.0">
+         <children>
+            <Text layoutX="12.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="total price =">
+               <font>
+                  <Font name="Basketball" size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="drprice" layoutX="164.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5161555">
+               <font>
+                  <Font name="Basketball" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="13.0" layoutY="601.0" prefHeight="71.0" prefWidth="264.0">
+         <children>
+            <Text layoutX="12.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="total price =">
+               <font>
+                  <Font name="Basketball" size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="apprice" layoutX="164.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5161555">
+               <font>
+                  <Font name="Basketball" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button layoutX="407.0" layoutY="764.0" mnemonicParsing="false" onAction="#SwitchToHomeAdmin" text="back">
+         <font>
+            <Font name="Basketball" size="30.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="96.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="appetizer">
+         <font>
+            <Font name="Basketball" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="408.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="main dish">
+         <font>
+            <Font name="Basketball" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="738.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="drink">
+         <font>
+            <Font name="Basketball" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

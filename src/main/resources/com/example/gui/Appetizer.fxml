@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="136.0" prefWidth="200.0" style="-fx-background-color: #cdcdcd;" styleClass="rnd" stylesheets="@css.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.stage2.ItemController">
+   <children>
+      <ImageView fx:id="img" fitHeight="52.0" fitWidth="86.0" layoutX="8.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/burger.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
+         </effect>
+      </ImageView>
+      <Label id="name" fx:id="Name" alignment="CENTER" layoutX="4.0" layoutY="6.0" prefHeight="21.0" prefWidth="196.0" text="Cheese Burger">
+         <font>
+            <Font name="Basketball" size="22.0" />
+         </font>
+      </Label>
+      <Label id="description" fx:id="Description" layoutX="96.0" layoutY="21.0" prefHeight="68.0" prefWidth="105.0" stylesheets="@css.css" text="Burger Sandwich &#10;With American Cheese &#10;And Fresh Veggies" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="9.0" />
+         </font>
+      </Label>
+      <Label id="price" fx:id="Price" layoutX="120.0" layoutY="93.0" prefHeight="43.0" prefWidth="72.0" stylesheets="@css.css" text="20$" textFill="#51b165" textOverrun="CLIP">
+         <font>
+            <Font name="Basketball" size="27.0" />
+         </font>
+      </Label>
+      <Label id="texprice" layoutX="123.0" layoutY="81.0" prefHeight="19.0" prefWidth="48.0" styleClass="txt10" stylesheets="@css.css" text="price">
+         <font>
+            <Font name="Basketball" size="20.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="Quantity" layoutX="27.0" layoutY="97.0" prefHeight="21.0" prefWidth="57.0" />
+   </children>
+</Pane>

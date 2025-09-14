@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="163.0" prefWidth="455.0" styleClass="restaurant" stylesheets="@css.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.stage2.RestaurantController">
+   <children>
+      <ImageView fx:id="image" fitHeight="97.0" fitWidth="101.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/soda-paper-cup-cartoon-icon-disposable-paper-cup-with-soda-and-straw-food-icon-concept-illustration-suitable-for-icon-logo-sticker-clipart-free-vector.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="RestName" alignment="CENTER" layoutX="108.0" layoutY="23.0" prefHeight="72.0" prefWidth="390.0" styleClass="name" stylesheets="@css.css" text="Hamdiola Pizza" textAlignment="CENTER" textFill="#dcab14">
+         <font>
+            <Font name="Basketball" size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutY="107.0" prefHeight="54.0" prefWidth="450.0" stylesheets="@css.css">
+         <children>
+            <Label fx:id="RestAdd" prefHeight="29.0" prefWidth="193.0" text="Shobra El Kheima">
+               <font>
+                  <Font name="Basketball" size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="9.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/location.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <HBox.margin>
+                  <Insets left="9.0" />
+               </HBox.margin>
+            </Separator>
+            <Label fx:id="RestNum" prefHeight="29.0" prefWidth="149.0" text="01286941822">
+               <font>
+                  <Font name="Basketball" size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="9.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/phone.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="9.0" />
+               </HBox.margin>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <HBox.margin>
+                  <Insets left="9.0" />
+               </HBox.margin>
+            </Separator>
+            <Label fx:id="RestRate" alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="74.0" stylesheets="@css.css" text="4.9">
+               <font>
+                  <Font name="Basketball" size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="9.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/star.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="9.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="restaurant_hbox" />
+            <String fx:value="restaurant_hbox:hover" />
+         </styleClass>
+      </HBox>
+   </children>
+</Pane>

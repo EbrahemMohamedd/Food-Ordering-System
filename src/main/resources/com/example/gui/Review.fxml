@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="900.0" prefWidth="700.0" styleClass="gradient" stylesheets="@css.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.stage3.ReviewController">
+   <children>
+      <ImageView fitHeight="715.0" fitWidth="706.0" layoutX="-3.0" layoutY="-3.0" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/star.png" />
+         </image>
+         <effect>
+            <Shadow height="0.0" radius="0.0" width="0.0" />
+         </effect>
+      </ImageView>
+      <Label layoutX="292.0" layoutY="23.0" text="Review">
+         <font>
+            <Font size="53.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="124.0" text="we wish that our retaurants satisfied you 😇">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="262.0" />
+      <Label layoutX="16.0" layoutY="777.0" text="© 2024 Los Galacticos [FCIS-ASU] . All rights reserved.&#10;Unauthorized reproduction, distribution, or modification of this material is strictly prohibited.&#10;&#10;" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="177.0" layoutY="628.0" mnemonicParsing="false" onAction="#SwitchToHome" prefHeight="34.0" prefWidth="133.0" stylesheets="@css.css" text="Back To Home">
+         <font>
+            <Font name="Basketball" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="bord" />
+            <String fx:value="round-layout" />
+         </styleClass>
+      </Button>
+      <Button layoutX="404.0" layoutY="628.0" mnemonicParsing="false" onAction="#Submit" prefHeight="34.0" prefWidth="103.0" stylesheets="@css.css" text="Submit">
+         <font>
+            <Font name="Basketball" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="round-layout" />
+            <String fx:value="bord" />
+         </styleClass>
+      </Button>
+      <Text fx:id="success" fill="#189c2a" layoutX="267.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Submitted Successfully!">
+         <font>
+            <Font name="Basketball" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Text>
+      <Text fx:id="fail" fill="#fa2727" layoutX="309.0" layoutY="607.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill all data">
+         <font>
+            <Font name="Basketball" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Text>
+      <MenuButton fx:id="RestName" alignment="CENTER" contentDisplay="CENTER" layoutX="237.0" layoutY="248.0" mnemonicParsing="false" stylesheets="@css.css" text="Choose The Restaurant" textAlignment="CENTER">
+         <styleClass>
+            <String fx:value="bord" />
+            <String fx:value="rnd" />
+         </styleClass>
+      </MenuButton>
+      <MenuButton fx:id="RestRate" alignment="CENTER" contentDisplay="CENTER" layoutX="248.0" layoutY="429.0" mnemonicParsing="false" stylesheets="@css.css" text="Rating From 1 Up To 5" textAlignment="CENTER">
+         <styleClass>
+            <String fx:value="bord" />
+            <String fx:value="rnd" />
+         </styleClass>
+      </MenuButton>
+   </children>
+</AnchorPane>

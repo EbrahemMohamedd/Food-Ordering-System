@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="136.0" prefWidth="200.0" style="-fx-background-color: f48fb1;" styleClass="rnd" stylesheets="@css.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.stage2.ItemController">
+    <children>
+        <ImageView fx:id="img" fitHeight="100.0" fitWidth="92.0" layoutX="2.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/pngwing.com.png" />
+            </image>
+            <effect>
+                <DropShadow blurType="TWO_PASS_BOX" height="5.0" radius="2.0" width="5.0" />
+            </effect>
+        </ImageView>
+        <Label id="name" fx:id="Name" alignment="CENTER" layoutX="4.0" layoutY="6.0" prefHeight="21.0" prefWidth="196.0" text="Turkey Meal">
+            <font>
+                <Font name="Basketball" size="22.0" />
+            </font>
+        </Label>
+        <Label id="description" fx:id="Description" alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="23.0" prefHeight="64.0" prefWidth="105.0" stylesheets="@css.css" text="A golden turkey with&#10;tender, juicy meat inside&#10;infused with savory&#10;herbs and spices" textAlignment="CENTER" textFill="#fffafa" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="10.0" />
+            </font>
+        </Label>
+        <Label id="price" fx:id="Price" alignment="CENTER" layoutX="118.0" layoutY="95.0" prefHeight="43.0" prefWidth="82.0" stylesheets="@css.css" text="999$" textAlignment="CENTER" textFill="#51b165" textOverrun="CLIP">
+            <font>
+                <Font name="Basketball" size="27.0" />
+            </font>
+        </Label>
+        <Label id="texprice" layoutX="129.0" layoutY="84.0" prefHeight="20.0" prefWidth="46.0" styleClass="txt10" stylesheets="@css.css" text="price">
+            <font>
+                <Font name="Basketball" size="20.0" />
+            </font>
+        </Label>
+        <Spinner fx:id="Quantity" layoutX="26.0" layoutY="102.0" prefHeight="21.0" prefWidth="57.0" />
+    </children>
+</Pane>

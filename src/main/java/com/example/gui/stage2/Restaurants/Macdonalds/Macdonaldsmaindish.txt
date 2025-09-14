@@ -1,0 +1,3 @@
+name: Big Mac, price: 180.0, description: double beef burger and french fries and cola, Image: /com/example/gui/assets/MAC/bigmac.png
+name: ShareBox Meal, price: 200.0, description: 2 double and 2 single beef or chicken burger, Image: /com/example/gui/assets/MAC/share.png
+name: orignial Burger  , price: 90.0, description: 100g beef burger and cheddar cheese, Image: /com/example/gui/assets/MAC/OriginalBurger.png

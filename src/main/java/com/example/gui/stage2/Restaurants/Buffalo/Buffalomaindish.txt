@@ -1,0 +1,3 @@
+name: Shiitake Mushroom, price: 130.0, description: 100g burger and cheddar cheese and mushroom, Image: /com/example/gui/assets/BUFFALO/Shittake.png
+name: Buffalo Burger, price: 100.0, description: 200g burger and barbecue sauce, Image: /com/example/gui/assets/BUFFALO/buffalo.png
+name: orignial Burger, price: 90.0, description: 100g beef burger and cheddar cheese, Image: /com/example/gui/assets/BUFFALO/OriginalBurger.png

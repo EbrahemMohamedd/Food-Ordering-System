@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="305.0" stylesheets="@css.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.stage3.AnalysisItemController">
+   <children>
+      <Label fx:id="quantity" alignment="CENTER" layoutX="12.0" layoutY="15.0" prefHeight="36.0" prefWidth="62.0" text="999">
+         <font>
+            <Font name="Basketball" size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="80.0" layoutY="22.0" prefHeight="20.0" prefWidth="31.0" text="x">
+         <font>
+            <Font name="Basketball" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="ItemName" alignment="CENTER" layoutX="115.0" layoutY="14.0" prefHeight="42.0" prefWidth="106.0" text="shikatti mushroom">
+         <font>
+            <Font name="Basketball" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="Price" alignment="CENTER" layoutX="224.0" layoutY="15.0" prefHeight="40.0" prefWidth="87.0" text="180.0$">
+         <font>
+            <Font name="Basketball" size="23.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow height="10.0" radius="4.5" width="10.0" />
+   </effect>
+</Pane>

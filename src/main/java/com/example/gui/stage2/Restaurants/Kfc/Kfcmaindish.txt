@@ -1,0 +1,4 @@
+name: KFC Burger, price: 150.0, description: 200g chicken burger and cheddar cheese, Image: /com/example/gui/assets/KFC/KFC Burger.png
+name: Mighty Zinger, price: 120.0, description: 2 pieces of zinger and barbecue sauce and mushroom, Image: /com/example/gui/assets/KFC/MightyZinger.png
+name: orignial Burger , price: 90.0, description: 100g beef burger and cheddar cheese, Image: /com/example/gui/assets/KFC/OriginalBurger.png
+name: twister, price: 100.0, description: spicy chicken wrap, Image: /com/example/gui/assets/BUFFALO LOGO.png

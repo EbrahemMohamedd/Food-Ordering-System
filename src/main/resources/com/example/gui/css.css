@@ -1,0 +1,133 @@
+
+.load
+{
+    -fx-background-color:"white";
+    -fx-font-family: "Basketball";
+}
+.label
+{
+
+    -fx-border-radius:9px;
+
+    -fx-font-family: "Basketball";
+
+}
+.round-layout{
+    -fx-border-radius: 50;
+    -fx-border-color: #070707;
+}
+.mode{
+    -fx-blend-mode: multiply;
+}
+.bord{
+    -fx-font-size: 19 px;
+
+-fx-font-family: "Basketball";
+    -fx-background-color: transparent; /* Default transparent background */
+    -fx-border-color: red;
+        -fx-text-fill: red;
+}
+.bord:hover{
+    -fx-background-radius: 50;
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+.selected:hover{
+    -fx-background-color: #b2560d
+
+}
+
+.gradient {
+        -fx-background-color: linear-gradient(#dee42c,orange,#DC6728);
+}
+.shadow{
+        -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0), 10,0,0,10);
+        -fx-background-radius: 15;
+
+}
+
+.name{
+    -fx-font-size: 34 px;
+}
+.restaurant{
+        -fx-background-radius: 25;
+        -fx-border-radius: 25;
+        -fx-background-color:"white";
+                    -fx-font-size: 21 px;
+
+}
+.restaurant:hover{
+            -fx-font-size: 21 px;
+
+        -fx-background-radius: 25;
+        -fx-border-radius: 25;
+        -fx-background-color:"red";
+}
+.trans{
+    -fx-background-color: transparent; /* Default transparent background */
+
+}
+
+.rnd{
+            -fx-background-radius: 15;
+            -fx-border-radius: 15;
+}
+#pane #price{
+    -fx-font-size: 34px !important;
+}
+#pane #texprice{
+
+    -fx-font-size: 20px !important;
+}
+#description{
+    -fx-font-size: 10px !important;
+}
+#name{
+    -fx-font-size: 22px !important;
+}
+#pane{
+
+-fx-background-size: cover;
+-fx-background-repeat: no-repeat;
+}
+.grad2{
+        -fx-background-color: linear-gradient(#e5d723,#fea702);
+            -fx-font-size: 30px ;
+      }
+#quant{
+
+            -fx-font-size: 15px ;
+
+}
+
+#ExitProgram{
+-fx-font-size: 15 px;
+-fx-border-radius: 50;
+-fx-border-color: #070707;
+-fx-font-family: "Basketball";
+-fx-background-color: transparent;
+-fx-border-color: red;
+-fx-text-fill: red;
+}
+
+#ExitProgram:hover{
+-fx-background-radius: 50;
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
+
+#search{
+            -fx-background-radius: 30;
+            -fx-border-radius: 30;
+}
+
+#box{
+-fx-font-size: 20 px;
+}
+
+.fon{
+-fx-font-family: "Basketball";
+-fx-font-size: 15 px;
+
+
+}

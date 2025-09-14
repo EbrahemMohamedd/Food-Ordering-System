@@ -1,0 +1,3 @@
+name:  Cola, price: 15.0, description: Nice Sode, Image: /com/example/gui/assets/WAHMY/Cola.png
+name:  Water, price: 5.0, description: Nestle Company producer, Image: /com/example/gui/assets/WAHMY/Water.png
+name:  orange juice, price: 8.0, description: fresh juice ( juhaina), Image: /com/example/gui/assets/WAHMY/OrangeJuice.png

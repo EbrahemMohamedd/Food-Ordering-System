@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" styleClass="gradient" stylesheets="@css.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.stage2.adminController">
+   <children>
+      <Text fx:id="rest" fill="#633939" layoutX="-344.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="691.7365798950195" x="350.0" y="100.0">
+         <font>
+            <Font name="Basketball" size="80.0" />
+         </font>
+      </Text>
+      <Button fx:id="additem" layoutX="6.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#additem" prefHeight="76.0" prefWidth="245.0" text="Add Item">
+         <font>
+            <Font name="Basketball" size="45.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="exit" layoutX="325.0" layoutY="563.0" mnemonicParsing="false" onMouseClicked="#switchToLogin" text="Exit">
+         <font>
+            <Font name="Basketball" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="remove" layoutX="7.0" layoutY="413.0" mnemonicParsing="false" onMouseClicked="#remove" text="remove item">
+         <font>
+            <Font name="Basketball" size="45.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="analysis" layoutX="446.0" layoutY="305.0" mnemonicParsing="false" onAction="#AnalysisScene" prefHeight="76.0" prefWidth="245.0" text="analysis">
+         <font>
+            <Font name="Basketball" size="45.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="edit" layoutX="446.0" layoutY="407.0" mnemonicParsing="false" onMouseClicked="#edit" prefHeight="76.0" prefWidth="245.0" text="edit price">
+         <font>
+            <Font name="Basketball" size="45.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="450.0" style="-fx-background-color: white;" styleClass="rnd" stylesheets="@css.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.stage2.ItemCartController">
+   <children>
+      <ImageView fx:id="imgCart" fitHeight="88.0" fitWidth="125.0" layoutX="121.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/pngwing.com.png" />
+         </image>
+         <effect>
+            <DropShadow height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </ImageView>
+      <VBox id="Vbox" layoutX="16.0" layoutY="5.0" prefHeight="81.0" prefWidth="65.0" stylesheets="@css.css">
+         <children>
+            <Pane id="quant" prefHeight="25.0" prefWidth="66.0">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <children>
+                  <Label alignment="CENTER" layoutX="1.0" layoutY="7.0" prefHeight="17.0" prefWidth="66.0" text="quantity">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="66.0">
+               <children>
+                  <Label fx:id="quantity" alignment="CENTER" layoutX="2.0" layoutY="1.0" prefHeight="28.0" prefWidth="65.0" text="10" textAlignment="CENTER">
+                     <font>
+                        <Font name="Basketball" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Label fx:id="name" layoutX="250.0" layoutY="4.0" prefHeight="32.0" prefWidth="258.0" text="Roasted Turkey" textFill="#1f81bf">
+         <font>
+            <Font name="Basketball" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="price" alignment="CENTER" layoutX="271.0" layoutY="38.0" prefHeight="48.0" prefWidth="118.0" text="999$" textAlignment="CENTER" textFill="#27d939">
+         <font>
+            <Font name="Basketball" size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="28.0" fitWidth="36.0" layoutX="417.0" layoutY="2.0" onMouseClicked="#Delete" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/—Pngtree—icon%20close%20button_4401093.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</Pane>

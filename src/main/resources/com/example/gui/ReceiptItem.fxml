@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="551.0" stylesheets="@css.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui.stage3.ReceiptItemController">
+   <children>
+      <Label fx:id="quantity" alignment="CENTER" layoutX="8.0" layoutY="4.0" prefHeight="39.0" prefWidth="77.0" text="Label">
+         <font>
+            <Font name="Basketball" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" alignment="CENTER" layoutX="78.0" layoutY="4.0" prefHeight="39.0" prefWidth="377.0" text="Label">
+         <font>
+            <Font name="Basketball" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="price" alignment="CENTER" layoutX="470.0" layoutY="4.0" prefHeight="39.0" prefWidth="77.0" text="Label">
+         <font>
+            <Font name="Basketball" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="78.0" layoutY="4.0" prefHeight="39.0" prefWidth="35.0" text="x">
+         <font>
+            <Font name="Basketball" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
